@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct cashback_maximizerApp: App {
+    @StateObject private var viewModel = CardViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() // 🔹 Use ContentView instead of CardCarouselView
         }
     }
 }
+
